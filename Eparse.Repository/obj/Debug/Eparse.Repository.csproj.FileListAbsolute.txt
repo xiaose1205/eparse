@@ -1,0 +1,11 @@
+D:\自己的产品\EParse\Eparse.Repository\bin\Debug\Eparse.Repository.dll
+D:\自己的产品\EParse\Eparse.Repository\bin\Debug\Eparse.Repository.pdb
+D:\自己的产品\EParse\Eparse.Repository\bin\Debug\Eparse.Model.dll
+D:\自己的产品\EParse\Eparse.Repository\bin\Debug\HelloData.FrameWork.dll
+D:\自己的产品\EParse\Eparse.Repository\bin\Debug\HelloData.FWCommon.dll
+D:\自己的产品\EParse\Eparse.Repository\bin\Debug\log4net.dll
+D:\自己的产品\EParse\Eparse.Repository\bin\Debug\Newtonsoft.Json.dll
+D:\自己的产品\EParse\Eparse.Repository\bin\Debug\Eparse.Model.pdb
+D:\自己的产品\EParse\Eparse.Repository\obj\Debug\Eparse.Repository.csprojResolveAssemblyReference.cache
+D:\自己的产品\EParse\Eparse.Repository\obj\Debug\Eparse.Repository.dll
+D:\自己的产品\EParse\Eparse.Repository\obj\Debug\Eparse.Repository.pdb

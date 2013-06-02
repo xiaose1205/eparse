@@ -1,0 +1,9 @@
+D:\自己的产品\EParse\Eparse.Model\bin\Debug\Eparse.Model.dll
+D:\自己的产品\EParse\Eparse.Model\bin\Debug\Eparse.Model.pdb
+D:\自己的产品\EParse\Eparse.Model\bin\Debug\HelloData.FrameWork.dll
+D:\自己的产品\EParse\Eparse.Model\bin\Debug\HelloData.FWCommon.dll
+D:\自己的产品\EParse\Eparse.Model\bin\Debug\log4net.dll
+D:\自己的产品\EParse\Eparse.Model\bin\Debug\Newtonsoft.Json.dll
+D:\自己的产品\EParse\Eparse.Model\obj\Debug\Eparse.Model.dll
+D:\自己的产品\EParse\Eparse.Model\obj\Debug\Eparse.Model.pdb
+D:\自己的产品\EParse\Eparse.Model\obj\Debug\Eparse.Model.csprojResolveAssemblyReference.cache

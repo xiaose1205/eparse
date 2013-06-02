@@ -1,0 +1,15 @@
+D:\自己的产品\EParse\Eparse.ServiceProxy\obj\Debug\Eparse.ServiceProxy.csprojResolveAssemblyReference.cache
+D:\自己的产品\EParse\Eparse.ServiceProxy\bin\Debug\Eparse.ServiceProxy.dll
+D:\自己的产品\EParse\Eparse.ServiceProxy\bin\Debug\Eparse.ServiceProxy.pdb
+D:\自己的产品\EParse\Eparse.ServiceProxy\bin\Debug\Eparse.Model.dll
+D:\自己的产品\EParse\Eparse.ServiceProxy\bin\Debug\Eparse.Repository.dll
+D:\自己的产品\EParse\Eparse.ServiceProxy\bin\Debug\Eparse.Service.dll
+D:\自己的产品\EParse\Eparse.ServiceProxy\bin\Debug\HelloData.FrameWork.dll
+D:\自己的产品\EParse\Eparse.ServiceProxy\bin\Debug\HelloData.FWCommon.dll
+D:\自己的产品\EParse\Eparse.ServiceProxy\bin\Debug\log4net.dll
+D:\自己的产品\EParse\Eparse.ServiceProxy\bin\Debug\Newtonsoft.Json.dll
+D:\自己的产品\EParse\Eparse.ServiceProxy\bin\Debug\Eparse.Repository.pdb
+D:\自己的产品\EParse\Eparse.ServiceProxy\bin\Debug\Eparse.Model.pdb
+D:\自己的产品\EParse\Eparse.ServiceProxy\bin\Debug\Eparse.Service.pdb
+D:\自己的产品\EParse\Eparse.ServiceProxy\obj\Debug\Eparse.ServiceProxy.dll
+D:\自己的产品\EParse\Eparse.ServiceProxy\obj\Debug\Eparse.ServiceProxy.pdb
