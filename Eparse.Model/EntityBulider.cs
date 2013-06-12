@@ -2,7 +2,7 @@
 
 /*
 	以下代码为T4自动生成的代码，请不要擅自修改
-	生成时间:2013-05-26 00:03:15.1668
+	生成时间:2013-06-04 23:50:41.1583
 	生成机器：WANGJUN
 	author：xiaose
 */
@@ -141,54 +141,6 @@ using HelloData.FrameWork.Data;
 		///	
 		/// </summary>
  		public int? font_tag_size { get; set; }		
-	    /// <summary>
-		///	
-		/// </summary>
- 		public string social_link1 { get; set; }		
-	    /// <summary>
-		///	
-		/// </summary>
- 		public string social_link1_title { get; set; }		
-	    /// <summary>
-		///	
-		/// </summary>
- 		public string social_link1_ico { get; set; }		
-	    /// <summary>
-		///	
-		/// </summary>
- 		public string social_link2 { get; set; }		
-	    /// <summary>
-		///	
-		/// </summary>
- 		public string social_link2_title { get; set; }		
-	    /// <summary>
-		///	
-		/// </summary>
- 		public string social_link2_ico { get; set; }		
-	    /// <summary>
-		///	
-		/// </summary>
- 		public string social_link3 { get; set; }		
-	    /// <summary>
-		///	
-		/// </summary>
- 		public string social_link3_title { get; set; }		
-	    /// <summary>
-		///	
-		/// </summary>
- 		public string social_link3_ico { get; set; }		
-	    /// <summary>
-		///	
-		/// </summary>
- 		public string social_link4 { get; set; }		
-	    /// <summary>
-		///	
-		/// </summary>
- 		public string social_link4_title { get; set; }		
-	    /// <summary>
-		///	
-		/// </summary>
- 		public string social_link4_ico { get; set; }		
 				
 		public static class Columns
 		{
@@ -221,18 +173,60 @@ using HelloData.FrameWork.Data;
 			public const string font_about_size="font_about_size";					
 			public const string font_tag="font_tag";					
 			public const string font_tag_size="font_tag_size";					
-			public const string social_link1="social_link1";					
-			public const string social_link1_title="social_link1_title";					
-			public const string social_link1_ico="social_link1_ico";					
-			public const string social_link2="social_link2";					
-			public const string social_link2_title="social_link2_title";					
-			public const string social_link2_ico="social_link2_ico";					
-			public const string social_link3="social_link3";					
-			public const string social_link3_title="social_link3_title";					
-			public const string social_link3_ico="social_link3_ico";					
-			public const string social_link4="social_link4";					
-			public const string social_link4_title="social_link4_title";					
-			public const string social_link4_ico="social_link4_ico";					
+		}
+				 
+	}
+				 
+    /// <summary>
+	///	
+	/// </summary>
+	[Serializable]
+    public partial class user_pagelink: BaseEntity
+    {
+	  
+	    /// <summary>
+		///	
+		/// </summary>
+        [Column(IsKeyProperty = true,AutoIncrement=true)]
+		public int id { get; set; }	
+		public  user_pagelink()
+        {
+            base.SetIni(this,"user_pagelink","id");
+        }	
+	    /// <summary>
+		///	
+		/// </summary>
+ 		public int? page_id { get; set; }		
+	    /// <summary>
+		///	
+		/// </summary>
+ 		public int? user_id { get; set; }		
+	    /// <summary>
+		///	
+		/// </summary>
+ 		public string link_url { get; set; }		
+	    /// <summary>
+		///	
+		/// </summary>
+ 		public string link_title { get; set; }		
+	    /// <summary>
+		///	
+		/// </summary>
+ 		public string link_ico { get; set; }		
+	    /// <summary>
+		///	
+		/// </summary>
+ 		public DateTime? createtime { get; set; }		
+				
+		public static class Columns
+		{
+			public const string id="id";					
+			public const string page_id="page_id";					
+			public const string user_id="user_id";					
+			public const string link_url="link_url";					
+			public const string link_title="link_title";					
+			public const string link_ico="link_ico";					
+			public const string createtime="createtime";					
 		}
 				 
 	}
@@ -366,6 +360,14 @@ using HelloData.FrameWork.Data;
 		///	
 		/// </summary>
  		public bool? isactive { get; set; }		
+	    /// <summary>
+		///	
+		/// </summary>
+ 		public DateTime? createtime { get; set; }		
+	    /// <summary>
+		///	
+		/// </summary>
+ 		public string ip { get; set; }		
 				
 		public static class Columns
 		{
@@ -375,6 +377,8 @@ using HelloData.FrameWork.Data;
 			public const string email="email";					
 			public const string isopen="isopen";					
 			public const string isactive="isactive";					
+			public const string createtime="createtime";					
+			public const string ip="ip";					
 		}
 				 
 	}

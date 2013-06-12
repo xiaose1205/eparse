@@ -75,10 +75,12 @@
     <Content Include="css\jquery.mobile-1.3.0.min.css" />
     <Content Include="css\jslider.css" />
     <Content Include="css\jslider.png" />
+    <Content Include="css\master.css" />
     <Content Include="css\messenger-theme-air.css" />
     <Content Include="css\messenger.css" />
     <Content Include="css\readbook.css" />
     <Content Include="css\uploadify.css" />
+    <Content Include="default.aspx" />
     <Content Include="demo.aspx" />
     <Content Include="images\ajax-loader.gif" />
     <Content Include="images\blank.gif" />
@@ -109,6 +111,7 @@
     <Content Include="images\custom_submit.png" />
     <Content Include="images\default.png" />
     <Content Include="images\email-icon.png" />
+    <Content Include="images\eparse.png" />
     <Content Include="images\global_sprites.png" />
     <Content Include="images\glyphicons-halflings-white.png" />
     <Content Include="images\glyphicons-halflings.png" />
@@ -117,6 +120,7 @@
     <Content Include="images\icons-18-white.png" />
     <Content Include="images\icons-36-black.png" />
     <Content Include="images\icons-36-white.png" />
+    <Content Include="images\multi-zoom.png" />
     <Content Include="images\qq-icon.png" />
     <Content Include="images\select.png" />
     <Content Include="images\select2.png" />
@@ -126,6 +130,7 @@
     <Content Include="images\sprits.png" />
     <Content Include="images\tel-icon.png" />
     <Content Include="Index.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="me\Me.aspx" />
     <Content Include="me\MeControl.ascx" />
     <Content Include="me\Navigation.ascx" />
@@ -145,6 +150,7 @@
     <Content Include="script\lib\jquery.mobile-1.3.0.js" />
     <Content Include="script\lib\jquery.mobile-1.3.0.min.js" />
     <Content Include="script\lib\jquery.slider.js" />
+    <Content Include="script\lib\jquery.tipsy.js" />
     <Content Include="script\lib\json.js" />
     <Content Include="script\lib\json2.js" />
     <Content Include="script\lib\kindeditor-min.js" />
@@ -173,6 +179,7 @@
     <Content Include="script\lib\uploader\window.receive.message.js" />
     <Content Include="script\main.js" />
     <Content Include="script\mecontrol.js" />
+    <Content Include="script\picturefill.js" />
     <Content Include="script\resources.js" />
     <Content Include="script\routes.js" />
     <Content Include="script\seajs\sea.js" />
@@ -180,6 +187,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="demo.aspx.cs">
       <DependentUpon>demo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -196,6 +210,13 @@
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="main.Master.cs">
       <DependentUpon>main.Master</DependentUpon>

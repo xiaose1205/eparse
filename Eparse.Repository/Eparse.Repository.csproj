@@ -50,6 +50,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsersRepository.cs" />
     <Compile Include="User_PageinfosRepository.cs" />
+    <Compile Include="User_PagelinkRepository.cs" />
     <Compile Include="User_PagesRepository.cs" />
     <Compile Include="User_PicsRepository.cs" />
   </ItemGroup>

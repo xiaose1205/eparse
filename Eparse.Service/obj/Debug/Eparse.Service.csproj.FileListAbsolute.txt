@@ -9,3 +9,14 @@ D:\自己的产品\EParse\Eparse.Service\bin\Debug\Newtonsoft.Json.dll
 D:\自己的产品\EParse\Eparse.Service\bin\Debug\Eparse.Model.pdb
 D:\自己的产品\EParse\Eparse.Service\obj\Debug\Eparse.Service.dll
 D:\自己的产品\EParse\Eparse.Service\obj\Debug\Eparse.Service.pdb
+D:\自己的产品\Eparse_git\eparse\Eparse.Service\bin\Debug\Eparse.Service.dll
+D:\自己的产品\Eparse_git\eparse\Eparse.Service\bin\Debug\Eparse.Service.pdb
+D:\自己的产品\Eparse_git\eparse\Eparse.Service\bin\Debug\Eparse.Model.dll
+D:\自己的产品\Eparse_git\eparse\Eparse.Service\bin\Debug\HelloData.FrameWork.dll
+D:\自己的产品\Eparse_git\eparse\Eparse.Service\bin\Debug\HelloData.FWCommon.dll
+D:\自己的产品\Eparse_git\eparse\Eparse.Service\bin\Debug\log4net.dll
+D:\自己的产品\Eparse_git\eparse\Eparse.Service\bin\Debug\Newtonsoft.Json.dll
+D:\自己的产品\Eparse_git\eparse\Eparse.Service\bin\Debug\Eparse.Model.pdb
+D:\自己的产品\Eparse_git\eparse\Eparse.Service\obj\Debug\Eparse.Service.csprojResolveAssemblyReference.cache
+D:\自己的产品\Eparse_git\eparse\Eparse.Service\obj\Debug\Eparse.Service.dll
+D:\自己的产品\Eparse_git\eparse\Eparse.Service\obj\Debug\Eparse.Service.pdb
