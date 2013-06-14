@@ -1,0 +1,49 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eparse.UI", "Eparse.UI\Eparse.UI.csproj", "{A5F11DE7-C158-4E4E-81F1-A572473AA377}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eparse.Model", "Eparse.Model\Eparse.Model.csproj", "{064F298E-A218-47BB-A56C-838C6243985A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eparse.Repository", "Eparse.Repository\Eparse.Repository.csproj", "{FAB2FF0B-2DCD-4510-B7E8-B2C6A5696A9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eparse.Service", "Eparse.Service\Eparse.Service.csproj", "{3993969B-C6FE-4DC7-99E6-94A82DB6848E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{DFE2A6AA-8E69-494D-B8DD-9DEC50E5F2B9}"
+	ProjectSection(SolutionItems) = preProject
+		readme.txt = readme.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eparse.ServiceProxy", "Eparse.ServiceProxy\Eparse.ServiceProxy.csproj", "{917434FE-5D79-4A39-8101-0A9F6971678D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5F11DE7-C158-4E4E-81F1-A572473AA377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5F11DE7-C158-4E4E-81F1-A572473AA377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5F11DE7-C158-4E4E-81F1-A572473AA377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5F11DE7-C158-4E4E-81F1-A572473AA377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{064F298E-A218-47BB-A56C-838C6243985A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064F298E-A218-47BB-A56C-838C6243985A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064F298E-A218-47BB-A56C-838C6243985A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064F298E-A218-47BB-A56C-838C6243985A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAB2FF0B-2DCD-4510-B7E8-B2C6A5696A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB2FF0B-2DCD-4510-B7E8-B2C6A5696A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB2FF0B-2DCD-4510-B7E8-B2C6A5696A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB2FF0B-2DCD-4510-B7E8-B2C6A5696A9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3993969B-C6FE-4DC7-99E6-94A82DB6848E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3993969B-C6FE-4DC7-99E6-94A82DB6848E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3993969B-C6FE-4DC7-99E6-94A82DB6848E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3993969B-C6FE-4DC7-99E6-94A82DB6848E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{917434FE-5D79-4A39-8101-0A9F6971678D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{917434FE-5D79-4A39-8101-0A9F6971678D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{917434FE-5D79-4A39-8101-0A9F6971678D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{917434FE-5D79-4A39-8101-0A9F6971678D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

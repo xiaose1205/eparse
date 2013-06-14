@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="Eparse.UI.main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" /> 
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav role="navigation" class="navigation">
+        <a href="#" class="open-menu">Menu <span class="close">Close</span></a>
+        <div class="shadow">
+            <ul class="main-nav">
+                <li><a href="/">EParse Me</a></li>
+                <li class=" active"><a href="/tour/">View Tour</a></li> 
+                <li><a href="/login/fb/">登录</a></li>
+                <li>
+                    <a href="/login/fb/"  >
+                        <i class="facebook"></i><span>加入我们</span>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="bodycontent">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <footer>
+
+        <div class="frame-fit">
+            <p>Volume Technologies Inc. All rights reserved.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/terms/">Terms</a></li>
+                    <li><a href="/privacy/">Privacy</a></li>
+                    <li><a href="/login/">Login</a></li>
+                    <li><a href="mailto:hello@hellosocial.com">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </footer>
+</body>
+</html>

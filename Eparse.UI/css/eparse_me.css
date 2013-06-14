@@ -1,0 +1,1737 @@
+﻿
+div#bd {
+    position: relative;
+}
+
+h2 {
+    color: rgb(45, 40, 40);
+}
+
+section#carousel {
+    background: rgb(255, 255, 255);
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+section#carousel .navigation {
+    right: 0px;
+    top: 0px;
+    width: 600px;
+    height: 30px;
+    position: fixed;
+    z-index: 1001;
+      -moz-border-radius-bottomLeft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+      border-radius: 0 0 0 5px;
+}
+
+
+section#carousel .navigation #global-nav-toggle {
+    float: left;
+    margin: 0;
+    padding: 9px 5px;
+    background: #50575E;
+    -moz-border-radius-bottomLeft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-radius: 0 0 0 5px;
+}
+#global-nav-toggle-icon {
+display: block;
+width: 12px;
+height: 12px;
+}
+ 
+.global-sprites-nav-toggle-left {
+background-position: -40px -30px;
+}
+ .global-sprites-nav-toggle-right {
+background-position: -60px -30px;
+}
+.global-sprites {
+background-image: url("../images/global_sprites.png");
+}
+section#carousel .navigation .main-nav_right {
+    float: right;
+}
+
+section#carousel .navigation .logo {
+    float: left;
+    margin-right: 20px;
+    padding-top: 5px;
+    font-size: 15px;
+    color: #000000;
+    line-height: 16px;
+    font-family: 'Microsoft YaHei UI';
+}
+
+section#carousel .navigation .main-nav {
+    width: auto;
+    float: right;
+    overflow: visible;
+}
+
+section#carousel .navigation .main-nav .btn-group li {
+    float: none;
+}
+
+section#carousel .navigation .main-nav .input-append {
+    padding-top: 5px;
+    margin-bottom: 0px;
+}
+
+section#carousel .navigation .main-nav .btn {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+section#carousel .navigation .main-nav_left {
+    float: left;
+    width: 400px;
+}
+
+section#carousel .navigation .main-nav li a {
+    padding: 9px 16px 6px 16px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+section#carousel .navigation .shadow {
+    width: 100%;
+    height: 30px;
+}
+
+section#carousel .navigation .logo {
+    float: right;
+}
+
+section#carousel nav {
+    margin: 30px 0px;
+    text-align: center;
+}
+
+section#carousel nav a {
+    margin: 0px 5px;
+    color: rgb(89, 90, 75);
+    line-height: 18px;
+    padding-bottom: 5px;
+    font-family: "Adelle Sans Regular", sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+section#carousel nav a.selected {
+    color: rgb(203, 32, 39);
+    border-bottom-color: rgb(203, 32, 39);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    cursor: default;
+}
+
+section#carousel nav a::after {
+    right: -8px;
+    color: rgb(136, 136, 136);
+    text-decoration: none;
+    position: absolute;
+    content: "\a0\b7";
+}
+
+section#carousel nav a:last-child::after {
+    content: "";
+}
+
+
+
+section#carousel div#carousel_container {
+    background: rgb(170, 170, 170);
+    top: -1px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+section#carousel div#carousel_container div.carousel_mask {
+    top: 0px;
+    width: 80px;
+    height: 100%;
+}
+
+section#carousel div#carousel_container div.clickable.carousel_mask {
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    opacity: 0;
+}
+
+section#carousel div#carousel_container div#carousel_mask_left {
+    left: 0;
+}
+
+section#carousel div#carousel_container div#carousel_mask_right {
+    right: 0;
+}
+
+section#carousel div#carousel_container div#carousel_mask_right #carousel_mask_right_arrow {
+    left: -70px;
+    top: 50%;
+    width: 46px;
+    height: 46px;
+    margin-top: -23px;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
+
+section#carousel div#carousel_container div.clickable#carousel_mask_right #carousel_mask_right_arrow {
+    display: block;
+}
+
+section#carousel div#carousel_container div.clickable#carousel_mask_left:hover {
+    background-color: rgb(102, 102, 102);
+    opacity: 0.5;
+}
+
+section#carousel div#carousel_container div.clickable#carousel_mask_right:hover {
+    background-color: rgb(102, 102, 102);
+    opacity: 0.5;
+}
+
+section#carousel div#carousel_container div#carousel_content {
+    transition: 0.5s ease-in-out;
+    left: 0px;
+    top: 0px;
+    height: 552px;
+    position: absolute;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+}
+
+section#carousel div#carousel_container div#carousel_content .carousel_bg {
+    top: 0px;
+    width: 100%;
+    height: 552px;
+    line-height: 0;
+    font-size: 0px;
+    position: absolute;
+}
+
+
+.con-sprites {
+    background-image: url("../images/controller_sprites.png");
+}
+
+.share-sprites {
+    background-image: url("../images/controller_sprites.png");
+}
+
+.con-icon-minimize {
+    background-position: -864px -40px;
+}
+
+.con-icon-minimize:hover {
+    background-position: -864px -60px;
+}
+
+.con-icon-back {
+    background-position: -864px -180px;
+}
+
+.con-icon-information {
+    background-position: 0px 0px;
+}
+
+.con-icon-information-hover {
+    background-position: -40px 0px;
+}
+
+.con-icon-contact {
+    background-position: 0px -40px;
+}
+
+.con-icon-contact-hover {
+    background-position: -40px -40px;
+}
+
+.con-icon-links {
+    background-position: 0px -560px;
+}
+
+.con-icon-links-hover {
+    background-position: -40px -560px;
+}
+
+.con-icon-footer-hover {
+    background-position: -40px -400px;
+}
+
+.con-icon-favicon {
+    background-position: 0px -80px;
+}
+
+.con-icon-favicon-hover {
+    background-position: -40px -80px;
+}
+
+.con-icon-content-add {
+    background-position: 0px -120px;
+}
+
+.con-icon-content-add-hover {
+    background-position: -40px -120px;
+}
+
+.con-icon-content-manage {
+    background-position: 0px -160px;
+}
+
+.con-icon-content-manage-hover {
+    background-position: -40px -160px;
+}
+
+.con-icon-services-create-hover {
+    background-position: -40px -200px;
+}
+
+.con-icon-design-layouts {
+    background-position: 0px -240px;
+}
+
+.con-icon-design-layouts-hover {
+    background-position: -40px -240px;
+}
+
+.con-icon-design-backgrounds {
+    background-position: 0px -280px;
+}
+
+.con-icon-design-backgrounds-hover {
+    background-position: -40px -280px;
+}
+
+.con-icon-design-colors {
+    background-position: 0px -320px;
+}
+
+.con-icon-design-colors-hover {
+    background-position: -40px -320px;
+}
+
+.con-icon-design-fonts {
+    background-position: 0px -360px;
+}
+
+.con-icon-design-fonts-hover {
+    background-position: -40px -360px;
+}
+
+.con-icon-promote-social {
+    background-position: 0px -440px;
+}
+
+.con-icon-promote-social-hover {
+    background-position: -40px -440px;
+}
+
+.con-icon-promote-web {
+    background-position: 0px -480px;
+}
+
+.con-icon-promote-web-hover {
+    background-position: -40px -480px;
+}
+
+.con-icon-promote-meta {
+    background-position: 0px -520px;
+}
+
+.con-icon-promote-meta-hover {
+    background-position: -40px -520px;
+}
+
+.con-icon-alignment-left {
+    background-position: -230px -240px;
+}
+
+.con-icon-alignment-center {
+    background-position: -230px -280px;
+}
+
+.con-icon-alignment-right {
+    background-position: -230px -320px;
+}
+
+.con-icon-corners-square {
+    background-position: -230px -360px;
+}
+
+.con-icon-corners-rounded {
+    background-position: -230px -400px;
+}
+
+.con-icon-bullets-square {
+    background-position: -230px -440px;
+}
+
+.con-icon-bullets-circle {
+    background-position: -230px -480px;
+}
+
+.con-icon-bullets-disc {
+    background-position: -230px -520px;
+}
+
+.con-icon-bullets-service {
+    background-position: -230px -600px;
+}
+
+.con-icon-bullets-none {
+    background-position: -230px -560px;
+}
+
+.con-icon-alignment-backgrounds-top-left {
+    background-position: -230px 0px;
+}
+
+.con-icon-alignment-backgrounds-top-center {
+    background-position: -230px -40px;
+}
+
+.con-icon-alignment-backgrounds-top-right {
+    background-position: -230px -80px;
+}
+
+.con-icon-alignment-backgrounds-bottom-left {
+    background-position: -230px -120px;
+}
+
+.con-icon-alignment-backgrounds-bottom-center {
+    background-position: -230px -160px;
+}
+
+.con-icon-alignment-backgrounds-bottom-right {
+    background-position: -230px -200px;
+}
+
+.con-layout-simple {
+    background-position: -310px 0px;
+}
+
+.con-layout-widescreen {
+    background-position: -310px -120px;
+}
+
+.con-layout-accordion {
+    background-position: -310px -240px;
+}
+
+.con-layout-grid {
+    background-position: -310px -360px;
+}
+
+.con-layout-grid-upgrade {
+    background-position: -420px -360px;
+}
+
+.con-layout-squared {
+    background-position: -310px -480px;
+}
+
+.con-layout-squared-upgrade {
+    background-position: -420px -480px;
+}
+
+.con-layout-sidebar {
+    background-position: -310px -600px;
+}
+
+.con-layout-sidebar-upgrade {
+    background-position: -420px -600px;
+}
+
+.con-layout-split {
+    background-position: -310px -720px;
+}
+
+.con-layout-split-upgrade {
+    background-position: -420px -720px;
+}
+
+.con-layout-squared_small {
+    background-position: -310px -840px;
+}
+
+.con-layout-squared_small-upgrade {
+    background-position: -420px -840px;
+}
+
+.con-layout-sentence {
+    background-position: -310px -1080px;
+}
+
+.con-layout-sentence-upgrade {
+    background-position: -420px -1080px;
+}
+
+.con-layout-highlighter {
+    background-position: -310px -960px;
+}
+
+.con-layout-strafe {
+    background-position: -310px -1180px;
+}
+
+.con-icon-background-none {
+    background-position: -740px 0px;
+}
+
+.con-button-edit {
+    background-position: -540px -80px;
+}
+
+.con-button-edit:hover {
+    background-position: -560px -80px;
+}
+
+.con-button-remove {
+    background-position: -540px -20px;
+}
+
+.con-button-remove:hover {
+    background-position: -560px -20px;
+}
+
+.con-button-sort {
+    background-position: -540px 0px;
+}
+
+.con-button-sort:hover {
+    background-position: -560px 0px;
+}
+
+.con-button-drawer-close {
+    background-position: -540px -150px;
+}
+
+.con-button-drawer-close:hover {
+    background-position: -560px -150px;
+}
+
+.con-logo-services-blogger {
+    background-position: -110px 0px;
+}
+
+.con-logo-services-twitter {
+    background-position: -110px -30px;
+}
+
+.con-logo-services-tumblr {
+    background-position: -110px -90px;
+}
+
+.con-logo-services-posterous {
+    background-position: -110px -120px;
+}
+
+.con-logo-services-wordpress {
+    background-position: -110px -150px;
+}
+
+.con-logo-services-linkedin {
+    background-position: -110px -180px;
+}
+
+.con-logo-services-goodreads {
+    background-position: -110px -210px;
+}
+
+.con-logo-services-goodreads-small {
+    background-position: -80px -210px;
+}
+
+.con-logo-services-netflix {
+    background-position: -110px -240px;
+}
+
+.con-logo-services-netflix-small {
+    background-position: -80px -240px;
+}
+
+.con-logo-services-youtube {
+    background-position: -110px -300px;
+}
+
+.con-logo-services-youtube-small {
+    background-position: -80px -300px;
+}
+
+.con-logo-services-flickr {
+    background-position: -110px -330px;
+}
+
+.con-logo-services-diandian-small {
+    background-position: -80px -330px;
+}
+
+.con-logo-services-feed {
+    background-position: -110px -360px;
+}
+
+.con-logo-services-feed-small {
+    background-position: -80px -360px;
+}
+
+.con-logo-services-vimeo {
+    background-position: -110px -390px;
+}
+
+.con-logo-services-vimeo-small {
+    background-position: -80px -390px;
+}
+
+.con-logo-services-foursquare {
+    background-position: -110px -420px;
+}
+
+.con-logo-services-youku-small {
+    background-position: -80px -420px;
+}
+
+.con-logo-services-delicious {
+    background-position: -110px -450px;
+}
+
+.con-logo-services-picasa {
+    background-position: -110px -480px;
+}
+
+.con-logo-services-picasa-small {
+    background-position: -80px -480px;
+}
+
+.con-logo-services-formspring {
+    background-position: -110px -510px;
+}
+
+.con-logo-services-jiepang-small {
+    background-position: -80px -510px;
+}
+
+.con-logo-services-soundcloud {
+    background-position: -110px -540px;
+}
+
+.con-logo-services-soundcloud-small {
+    background-position: -80px -540px;
+}
+
+.con-logo-services-typepad {
+    background-position: -110px -570px;
+}
+
+.con-logo-services-typepad-small {
+    background-position: -80px -570px;
+}
+
+.con-logo-services-digg {
+    background-position: -110px -600px;
+}
+
+.con-logo-services-github {
+    background-position: -110px -630px;
+}
+
+.con-logo-services-tudou-small {
+    background-position: -80px -630px;
+}
+
+.con-logo-services-tripit {
+    background-position: -110px -660px;
+}
+
+.con-logo-services-tripit-small {
+    background-position: -80px -660px;
+}
+
+.con-logo-services-lastfm {
+    background-position: -110px -690px;
+}
+
+.con-logo-services-lastfm-small {
+    background-position: -80px -690px;
+}
+
+.con-logo-services-googlereader {
+    background-position: -110px -720px;
+}
+
+.con-logo-services-googlereader-small {
+    background-position: -80px -720px;
+}
+
+.con-logo-services-buzz {
+    background-position: -110px -810px;
+}
+
+.con-logo-services-gowalla {
+    background-position: -110px -960px;
+}
+
+.con-logo-services-gowalla-small {
+    background-position: -80px -960px;
+}
+
+.con-logo-services-behance {
+    background-position: -110px -930px;
+}
+
+.con-logo-services-sohuweibo-small {
+    background-position: -80px -930px;
+}
+
+.con-logo-services-bandcamp {
+    background-position: -110px -990px;
+}
+
+.con-logo-services-qqweibo-small {
+    background-position: -80px -990px;
+}
+
+.con-logo-services-facebookpage {
+    background-position: -110px -1080px;
+}
+
+.con-logo-services-pengyou-small {
+    background-position: -80px -1080px;
+}
+
+.con-logo-services-songkick {
+    background-position: -110px -1050px;
+}
+
+.con-logo-services-songkick-small {
+    background-position: -80px -1050px;
+}
+
+.con-logo-services-dailybooth {
+    background-position: -110px -1020px;
+}
+
+.con-logo-services-renren-small {
+    background-position: -80px -1020px;
+}
+
+.con-logo-services-eighttracks {
+    background-position: -110px -1110px;
+}
+
+.con-logo-services-sinaweibo-small {
+    background-position: -80px -1110px;
+}
+
+.con-logo-services-instagram {
+    background-position: -110px -1170px;
+}
+
+.con-logo-services-instagram-small {
+    background-position: -80px -1170px;
+}
+
+.con-logo-services-topspin {
+    background-position: -110px -1140px;
+}
+
+.con-logo-services-topspin-small {
+    background-position: -80px -1140px;
+}
+
+.con-logo-services-foodspotting {
+    background-position: -590px -390px;
+}
+
+.con-logo-services-foodspotting-small {
+    background-position: -710px -390px;
+}
+
+.con-logo-services-hypemachine {
+    background-position: -590px -420px;
+}
+
+.con-logo-services-hypemachine-small {
+    background-position: -710px -420px;
+}
+
+.con-logo-services-fitbit {
+    background-position: -590px -450px;
+}
+
+.con-logo-services-fitbit-small {
+    background-position: -710px -450px;
+}
+
+.con-logo-custom-map {
+    background-position: -590px 0px;
+}
+
+.con-logo-custom-vcard {
+    background-position: -590px -30px;
+}
+
+.con-logo-custom-plain {
+    background-position: -590px -60px;
+}
+
+.con-logo-custom-bio {
+    background-position: -590px -90px;
+}
+
+.con-logo-custom-embed {
+    background-position: -590px -120px;
+}
+
+.con-logo-services-custom_map-small {
+    background-position: -710px 0px;
+}
+
+.con-logo-services-custom_vcard-small {
+    background-position: -710px -30px;
+}
+
+.con-logo-services-custom_plain-small {
+    background-position: -710px -60px;
+}
+
+.con-logo-services-custom_bio-small {
+    background-position: -710px -90px;
+}
+
+.con-logo-services-custom_embed-small {
+    background-position: -710px -120px;
+}
+
+.con-font-arial_bold {
+    background-position: 0px -50px;
+}
+
+.con-font-arial_bold_italic {
+    background-position: 0px -100px;
+}
+
+.con-font-arial_italic {
+    background-position: 0px -150px;
+}
+
+.con-font-benton_bold_condensed {
+    background-position: 0px -250px;
+}
+
+.con-font-benton_compressed_bold {
+    background-position: 0px -300px;
+}
+
+.con-font-beton_extra_bold {
+    background-position: 0px -350px;
+}
+
+.con-font-beton_medium {
+    background-position: 0px -450px;
+}
+
+.con-font-brandon_black {
+    background-position: 0px -500px;
+}
+
+.con-font-brandon_black_italic {
+    background-position: 0px -550px;
+}
+
+.con-font-brandon_bold {
+    background-position: 0px -600px;
+}
+
+.con-font-brandon_bold_italic {
+    background-position: 0px -650px;
+}
+
+.con-font-brandon_light {
+    background-position: 0px -700px;
+}
+
+.con-font-brandon_light_italic {
+    background-position: 0px -750px;
+}
+
+.con-font-brandon_medium {
+    background-position: 0px -800px;
+}
+
+.con-font-brandon_medium_italic {
+    background-position: 0px -850px;
+}
+
+.con-font-brandon_regular {
+    background-position: 0px -900px;
+}
+
+.con-font-brandon_regular_italic {
+    background-position: 0px -950px;
+}
+
+.con-font-brandon_thin {
+    background-position: 0px -1000px;
+}
+
+.con-font-brandon_thin_italic {
+    background-position: 0px -1050px;
+}
+
+.con-font-brevia_black {
+    background-position: 0px -1100px;
+}
+
+.con-font-brevia_black_italic {
+    background-position: 0px -1150px;
+}
+
+.con-font-brevia_bold {
+    background-position: 0px -1200px;
+}
+
+.con-font-brevia_bold_italic {
+    background-position: 0px -1250px;
+}
+
+.con-font-brevia_extra_black {
+    background-position: 0px -1300px;
+}
+
+.con-font-brevia_extra_black_italic {
+    background-position: 0px -1350px;
+}
+
+.con-font-brevia_light {
+    background-position: 0px -1400px;
+}
+
+.con-font-brevia_light_italic {
+    background-position: 0px -1450px;
+}
+
+.con-font-brevia_medium {
+    background-position: 0px -1500px;
+}
+
+.con-font-brevia_medium_italic {
+    background-position: 0px -1550px;
+}
+
+.con-font-brevia_regular {
+    background-position: 0px -1600px;
+}
+
+.con-font-brevia_regular_italic {
+    background-position: 0px -1650px;
+}
+
+.con-font-brevia_semibold {
+    background-position: 0px -1700px;
+}
+
+.con-font-brevia_semibold_italic {
+    background-position: 0px -1750px;
+}
+
+.con-font-chunkfive {
+    background-position: 0px -1800px;
+}
+
+.con-font-clarendon_bold {
+    background-position: 0px -1850px;
+}
+
+.con-font-clarendon_extra_bold {
+    background-position: 0px -1900px;
+}
+
+.con-font-clarendon_light {
+    background-position: 0px -1950px;
+}
+
+.con-font-clarendon_medium {
+    background-position: -236px 0px;
+}
+
+.con-font-courier_new {
+    background-position: -236px -50px;
+}
+
+.con-font-courier_new_bold {
+    background-position: -236px -100px;
+}
+
+.con-font-eksja {
+    background-position: -236px -150px;
+}
+
+.con-font-eksja_black {
+    background-position: -236px -200px;
+}
+
+.con-font-eksja_black_italic {
+    background-position: -236px -250px;
+}
+
+.con-font-eksja_bold {
+    background-position: -236px -300px;
+}
+
+.con-font-eksja_bold_italic {
+    background-position: -236px -350px;
+}
+
+.con-font-eksja_italic {
+    background-position: -236px -400px;
+}
+
+.con-font-eksja_thin {
+    background-position: -236px -450px;
+}
+
+.con-font-eksja_thin_italic {
+    background-position: -236px -500px;
+}
+
+.con-font-enamel_brush {
+    background-position: -236px -550px;
+}
+
+.con-font-fontsite_sans_black {
+    background-position: -236px -600px;
+}
+
+.con-font-fontsite_sans_black_condensed {
+    background-position: -236px -650px;
+}
+
+.con-font-fontsite_sans_black_condensed_italic {
+    background-position: -236px -700px;
+}
+
+.con-font-fontsite_sans_black_italic {
+    background-position: -236px -750px;
+}
+
+.con-font-fontsite_sans_bold {
+    background-position: -236px -800px;
+}
+
+.con-font-fontsite_sans_bold_condensed {
+    background-position: -236px -850px;
+}
+
+.con-font-fontsite_sans_bold_condensed_italic {
+    background-position: -236px -900px;
+}
+
+.con-font-fontsite_sans_bold_italic {
+    background-position: -236px -950px;
+}
+
+.con-font-fontsite_sans_condensed {
+    background-position: -236px -1000px;
+}
+
+.con-font-fontsite_sans_condensed_italic {
+    background-position: -236px -1050px;
+}
+
+.con-font-fontsite_sans_italic {
+    background-position: -236px -1100px;
+}
+
+.con-font-fontsite_sans_light {
+    background-position: -236px -1150px;
+}
+
+.con-font-fontsite_sans_light_condensed {
+    background-position: -236px -1200px;
+}
+
+.con-font-fontsite_sans_light_condensed_italic {
+    background-position: -236px -1250px;
+}
+
+.con-font-fontsite_sans_light_italic {
+    background-position: -236px -1300px;
+}
+
+.con-font-fontsite_sans_outline {
+    background-position: -236px -1350px;
+}
+
+.con-font-fontsite_sans_roman {
+    background-position: -236px -1400px;
+}
+
+.con-font-fontsite_sans_ultra_light {
+    background-position: -236px -1450px;
+}
+
+.con-font-fontsite_sans_ultra_light_italic {
+    background-position: -236px -1500px;
+}
+
+.con-font-franklin_gothic_book {
+    background-position: -236px -1550px;
+}
+
+.con-font-franklin_gothic_book_italic {
+    background-position: -236px -1600px;
+}
+
+.con-font-franklin_gothic_caps_condensed {
+    background-position: -236px -1650px;
+}
+
+.con-font-franklin_gothic_caps_medium_condensed {
+    background-position: -236px -1700px;
+}
+
+.con-font-franklin_gothic_compressed {
+    background-position: -236px -1750px;
+}
+
+.con-font-franklin_gothic_condensed {
+    background-position: -236px -1800px;
+}
+
+.con-font-franklin_gothic_condensed_italic {
+    background-position: -236px -1850px;
+}
+
+.con-font-franklin_gothic_demibold {
+    background-position: -236px -1900px;
+}
+
+.con-font-franklin_gothic_demibold_condensed {
+    background-position: -236px -1950px;
+}
+
+.con-font-franklin_gothic_demibold_condensed_italic {
+    background-position: -472px 0px;
+}
+
+.con-font-franklin_gothic_demibold_italic {
+    background-position: -472px -50px;
+}
+
+.con-font-franklin_gothic_heavy {
+    background-position: -472px -100px;
+}
+
+.con-font-franklin_gothic_heavy_italic {
+    background-position: -472px -150px;
+}
+
+.con-font-franklin_gothic_medium {
+    background-position: -472px -200px;
+}
+
+.con-font-franklin_gothic_medium_condensed {
+    background-position: -472px -250px;
+}
+
+.con-font-franklin_gothic_medium_condensed_italic {
+    background-position: -472px -300px;
+}
+
+.con-font-franklin_gothic_medium_italic {
+    background-position: -472px -350px;
+}
+
+.con-font-gala {
+    background-position: -472px -400px;
+}
+
+.con-font-gala_biline {
+    background-position: -472px -450px;
+}
+
+.con-font-gala_bold {
+    background-position: -472px -500px;
+}
+
+.con-font-gala_condensed {
+    background-position: -472px -550px;
+}
+
+.con-font-gala_condensed_bold {
+    background-position: -472px -600px;
+}
+
+.con-font-gala_condensed_medium {
+    background-position: -472px -650px;
+}
+
+.con-font-gala_ombra {
+    background-position: -472px -700px;
+}
+
+.con-font-gala_triline {
+    background-position: -472px -750px;
+}
+
+.con-font-georgia {
+    background-position: -472px -800px;
+}
+
+.con-font-georgia_bold {
+    background-position: -472px -850px;
+}
+
+.con-font-georgia_bold_italic {
+    background-position: -472px -900px;
+}
+
+.con-font-georgia_italic {
+    background-position: -472px -950px;
+}
+
+.con-font-kalico_script {
+    background-position: -472px -1000px;
+}
+
+.con-font-kalico_swash {
+    background-position: -472px -1050px;
+}
+
+.con-font-lavender_script {
+    background-position: -472px -1100px;
+}
+
+.con-font-league_gothic {
+    background-position: -472px -1150px;
+}
+
+.con-font-litho_caps_light {
+    background-position: -472px -1200px;
+}
+
+.con-font-litho_caps_medium {
+    background-position: -472px -1250px;
+}
+
+.con-font-litho_condensed {
+    background-position: -472px -1300px;
+}
+
+.con-font-litho_demibold {
+    background-position: -472px -1350px;
+}
+
+.con-font-litho_demibold_italic {
+    background-position: -472px -1400px;
+}
+
+.con-font-litho_extra_bold {
+    background-position: -472px -1450px;
+}
+
+.con-font-litho_light {
+    background-position: -472px -1500px;
+}
+
+.con-font-litho_light_italic {
+    background-position: -472px -1550px;
+}
+
+.con-font-litho_medium {
+    background-position: -472px -1600px;
+}
+
+.con-font-litho_medium_italic {
+    background-position: -472px -1650px;
+}
+
+.con-font-lucida_grande {
+    background-position: -472px -1700px;
+}
+
+.con-font-lucida_grande_bold {
+    background-position: -472px -1750px;
+}
+
+.con-font-melville {
+    background-position: -472px -1800px;
+}
+
+.con-font-nipey {
+    background-position: -472px -1850px;
+}
+
+.con-font-octin_college_black {
+    background-position: -472px -1900px;
+}
+
+.con-font-octin_college_bold {
+    background-position: -472px -1950px;
+}
+
+.con-font-octin_college_book {
+    background-position: -708px 0px;
+}
+
+.con-font-octin_college_heavy {
+    background-position: -708px -50px;
+}
+
+.con-font-octin_college_light {
+    background-position: -708px -100px;
+}
+
+.con-font-octin_college_regular {
+    background-position: -708px -150px;
+}
+
+.con-font-octin_college_semibold {
+    background-position: -708px -200px;
+}
+
+.con-font-octin_sports_black {
+    background-position: -708px -250px;
+}
+
+.con-font-octin_sports_bold {
+    background-position: -708px -300px;
+}
+
+.con-font-octin_sports_book {
+    background-position: -708px -350px;
+}
+
+.con-font-octin_sports_heavy {
+    background-position: -708px -400px;
+}
+
+.con-font-octin_sports_light {
+    background-position: -708px -450px;
+}
+
+.con-font-octin_sports_regular {
+    background-position: -708px -500px;
+}
+
+.con-font-octin_sports_semibold {
+    background-position: -708px -550px;
+}
+
+.con-font-octin_spraypaint_a {
+    background-position: -708px -600px;
+}
+
+.con-font-octin_spraypaint_a_black {
+    background-position: -708px -650px;
+}
+
+.con-font-octin_spraypaint_a_bold {
+    background-position: -708px -700px;
+}
+
+.con-font-octin_spraypaint_b {
+    background-position: -708px -750px;
+}
+
+.con-font-octin_spraypaint_b_black {
+    background-position: -708px -800px;
+}
+
+.con-font-octin_spraypaint_b_bold {
+    background-position: -708px -850px;
+}
+
+.con-font-raleway_thin {
+    background-position: -708px -900px;
+}
+
+.con-font-richard_miller {
+    background-position: -708px -950px;
+}
+
+.con-font-richard_miller_book {
+    background-position: -708px -1000px;
+}
+
+.con-font-richard_miller_light {
+    background-position: -708px -1050px;
+}
+
+.con-font-richard_miller_rounded_book {
+    background-position: -708px -1100px;
+}
+
+.con-font-richard_miller_rounded_light {
+    background-position: -708px -1150px;
+}
+
+.con-font-richard_miller_rounded_regular {
+    background-position: -708px -1200px;
+}
+
+.con-font-richard_miller_rounded_ultra_light {
+    background-position: -708px -1250px;
+}
+
+.con-font-richard_miller_ultra_light {
+    background-position: -708px -1300px;
+}
+
+.con-font-ryno_slab {
+    background-position: -708px -1350px;
+}
+
+.con-font-sadey_ann {
+    background-position: -708px -1400px;
+}
+
+.con-font-social_gothic {
+    background-position: -708px -1450px;
+}
+
+.con-font-sorts_mill_goudy {
+    background-position: -708px -1500px;
+}
+
+.con-font-sorts_mill_goudy_italic {
+    background-position: -708px -1550px;
+}
+
+.con-font-square_serif_bold {
+    background-position: -708px -1600px;
+}
+
+.con-font-square_serif_bold_italic {
+    background-position: -708px -1650px;
+}
+
+.con-font-square_serif_book {
+    background-position: -708px -1700px;
+}
+
+.con-font-square_serif_book_italic {
+    background-position: -708px -1750px;
+}
+
+.con-font-square_serif_demibold {
+    background-position: -708px -1800px;
+}
+
+.con-font-square_serif_demibold_italic {
+    background-position: -708px -1850px;
+}
+
+.con-font-square_serif_light {
+    background-position: -708px -1900px;
+}
+
+.con-font-square_serif_light_italic {
+    background-position: -708px -1950px;
+}
+
+.con-font-square_serif_medium {
+    background-position: -944px 0px;
+}
+
+.con-font-square_serif_medium_italic {
+    background-position: -944px -50px;
+}
+
+.con-font-swingdancer {
+    background-position: -944px -100px;
+}
+
+.con-font-tahoma {
+    background-position: -944px -150px;
+}
+
+.con-font-tahoma_bold {
+    background-position: -944px -200px;
+}
+
+.con-font-times_new_roman {
+    background-position: -944px -250px;
+}
+
+.con-font-times_new_roman_bold {
+    background-position: -944px -300px;
+}
+
+.con-font-times_new_roman_bold_italic {
+    background-position: -944px -350px;
+}
+
+.con-font-times_new_roman_italic {
+    background-position: -944px -400px;
+}
+
+.con-font-toronto_gothic {
+    background-position: -944px -450px;
+}
+
+.con-font-trebuchet_ms {
+    background-position: -944px -500px;
+}
+
+.con-font-trebuchet_ms__bold {
+    background-position: -944px -550px;
+}
+
+.con-font-trebuchet_ms_bold_italic {
+    background-position: -944px -600px;
+}
+
+.con-font-trebuchet_ms_italic {
+    background-position: -944px -650px;
+}
+
+.con-font-vectaserif {
+    background-position: -944px -700px;
+}
+
+.con-font-verdana {
+    background-position: -944px -750px;
+}
+
+.con-font-verdana_bold {
+    background-position: -944px -800px;
+}
+
+.con-font-verdana_bold_italic {
+    background-position: -944px -850px;
+}
+
+.con-font-verdana_italic {
+    background-position: -944px -900px;
+}
+
+.con-font-whitehall {
+    background-position: -944px -950px;
+}
+
+.con-font-kxz {
+    background-position: -944px -1000px;
+}
+
+.con-font-st {
+    background-position: -944px -1050px;
+}
+
+.con-font-st_bold {
+    background-position: -944px -1100px;
+}
+
+.con-font-wryh {
+    background-position: -944px -1150px;
+}
+
+.con-font-matryoshkapregnant {
+    background-position: -944px -1200px;
+}
+
+.con-font-sorbet {
+    background-position: -944px -1250px;
+}
+
+.con-font-paenbico {
+    background-position: -944px -1300px;
+}
+
+.con-font-octinsport {
+    background-position: -944px -1350px;
+}
+
+.con-font-planer {
+    background-position: -944px -1400px;
+}
+
+.con-font-geometrysoftpro {
+    background-position: -944px -1450px;
+}
+
+.con-font-geoticathree {
+    background-position: -944px -1500px;
+}
+
+.con-font-mrjonesbBook {
+    background-position: -944px -1550px;
+}
+
+.con-font-neuropoliticalrg {
+    background-position: -944px -1600px;
+}
+
+.con-font-steelfishrg {
+    background-position: -944px -1650px;
+}
+
+.con-font-uniwerek {
+    background-position: -944px -1700px;
+}
+
+.con-font-starsstripes {
+    background-position: -944px -1750px;
+}
+
+.con-font-biting {
+    background-position: -944px -1800px;
+}
+
+.con-font-museosans {
+    background-position: -944px -1850px;
+}
+
+.con-font-flexo {
+    background-position: -944px -1900px;
+}
+
+.con-font-sketchetik {
+    background-position: -944px -1950px;
+}
+
+.con-font-neuropol {
+    background-position: -708px 0px;
+}
+
+.con-font-nikaiascript {
+    background-position: -708px -50px;
+}
+
+.con-font-olney {
+    background-position: -708px -100px;
+}
+
+.con-font-duality {
+    background-position: -708px -150px;
+}
+
+
+.epase_action {
+    border-radius: 5px;
+    bottom: 10px;
+    width: auto;
+    right: 40px;
+    color: rgb(255, 255, 255);
+    font-family: "Lucida Grande", Tahoma;
+    visibility: visible;
+    position: fixed;
+    z-index: 998;
+    box-shadow: 0px 0px 5px #000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 0 5px #000;
+    -webkit-box-shadow: 0 0 5px #000;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.epase_action span.action_close {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    background: url(../images/sprits.png) no-repeat -140px 8px;
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+
+.epase_action a {
+    margin-right: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.carousel_item hr {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #fff;
+    margin: 0;
+    line-height: 1px;
+    height: 0;
+    filter: alpha(opacity=15);
+    opacity: .15;
+    background-color: #999;
+    border: 0;
+    display: block;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    height: 1px;
+}
+
+.carousel_item ul {
+    display: block;
+    padding-left: 30px;
+    position: relative;
+    padding-bottom: 10px;
+    list-style: none;
+}
+
+.carousel_item ul.list:before {
+    content: " ";
+    border-radius: 11px;
+    height: 22px;
+    width: 22px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 22px;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.5);
+    vertical-align: baseline;
+    text-align: center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.carousel_item .me_tag:before {
+    background-image: url(../images/icon-tags.png);
+}
+
+
+
+.me_tag li {
+    display: inline-block;
+    margin-right: 9px;
+}
+
+.carousel_item .me_web {
+    margin-top: 5px;
+}
+
+.carousel_item .me_web li:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.5);
+    vertical-align: baseline;
+    text-align: center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    border-radius: 0;
+    background-image: url(../images/default.png);
+}
+
+#carousel_info li.me_page {
+    display: none;
+}
