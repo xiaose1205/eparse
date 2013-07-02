@@ -16,3 +16,12 @@ D:\自己的产品\Eparse_git\eparse\Eparse.Model\bin\Debug\Newtonsoft.Json.dll
 D:\自己的产品\Eparse_git\eparse\Eparse.Model\obj\Debug\Eparse.Model.csprojResolveAssemblyReference.cache
 D:\自己的产品\Eparse_git\eparse\Eparse.Model\obj\Debug\Eparse.Model.dll
 D:\自己的产品\Eparse_git\eparse\Eparse.Model\obj\Debug\Eparse.Model.pdb
+K:\EParse\Eparse_git\eparse\Eparse.Model\bin\Debug\Eparse.Model.dll
+K:\EParse\Eparse_git\eparse\Eparse.Model\bin\Debug\Eparse.Model.pdb
+K:\EParse\Eparse_git\eparse\Eparse.Model\bin\Debug\HelloData.FrameWork.dll
+K:\EParse\Eparse_git\eparse\Eparse.Model\bin\Debug\HelloData.FWCommon.dll
+K:\EParse\Eparse_git\eparse\Eparse.Model\bin\Debug\log4net.dll
+K:\EParse\Eparse_git\eparse\Eparse.Model\bin\Debug\Newtonsoft.Json.dll
+K:\EParse\Eparse_git\eparse\Eparse.Model\obj\Debug\Eparse.Model.csprojResolveAssemblyReference.cache
+K:\EParse\Eparse_git\eparse\Eparse.Model\obj\Debug\Eparse.Model.dll
+K:\EParse\Eparse_git\eparse\Eparse.Model\obj\Debug\Eparse.Model.pdb

@@ -24,5 +24,16 @@ namespace Eparse.Repository
 {
     public class UsersRepository : BaseManager<UsersRepository, users>
     {
+
+        public users getModel(string username, string pwd)
+        {
+            using (SelectAction action = new SelectAction(this.Entity))
+            {
+                action.SqlWhere(users.Columns.username, username);
+                if (!string.IsNullOrEmpty(pwd))
+                    action.SqlWhere(users.Columns.password, pwd);
+                return action.QueryEntity<users>();
+            }
+        }
     }
 }

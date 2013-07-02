@@ -1,39 +1,37 @@
 ﻿define(function (require, exports, module) {
     var $ = require('lib/jquery.js');
     require("lib/messenger.js");
-
+ 
     $._messengerDefaults = {
-        extraClasses: 'messenger-fixed messenger-theme-air messenger-on-top'
+        extraClasses: 'messenger-fixed messenger-theme-air messenger-on-top  messenger-on-right'
     };
-
+    var msg = $.globalMessenger().post({
+        id: "Only-one-message", singleton: true,
+        message: "",
+        type: 'success',location:""
+    });
+    msg.hide();
     /*弹出层*/
     exports.alertMsg = function (message, result, func) {
-        $.globalMessenger().post({
+
+        msg.update({
+            id: "Only-one-message", singleton: true,
             message: message,
             type: result == 1 ? 'success' : 'error',
             showCloseButton: true
         });
-
+        msg.show();
     };
+
     /*loading*/
-    exports.showLoading == function (message, result) {
-        $.globalMessenger().post({
-            message: message,
-            type: result == 1 ? 'success' : 'error',
-            action: function (opts) {
-                if (++i < 3) {
-                    return opts.error({
-                        status: 500,
-                        readyState: 0,
-                        responseText: 0
-                    });
-                } else {
-                    return opts.success();
-                }
-            }
-        });
-
+    exports.showLoading = function (message, result) {
+        var i = 0;
+        msg.update({
+            id: "Only-one-message", singleton: true,
+            message: message, type: 'success'
+        }); msg.show();
     };
+
     /*多个一起判断*/
     exports.confirmMsg = function (message, okvalue, canelvalue, funcok, funccanel) {
         $.globalMessenger().post({
@@ -73,13 +71,40 @@
                 exports.showLoading("数据处理中....", 1);
             },
             success: function (data, textStatus) {
+
+                funcSuc(data);
             },
             complete: function (XMLHttpRequest, textStatus) {
+
             },
             dataType: "json"
         });
+
+        //var i = 0;
+        //$.globalMessenger()["do"]({
+        //    errorMessage: "This did not go well.",
+        //    action: function (opts) {
+        //        if (++i < 3) {
+        //            return opts.error({
+        //                status: 500,
+        //                readyState: 0,
+        //                responseText: 0
+        //            });
+        //        } else {
+        //            return opts.success();
+        //        }
+        //    }
+        //}, {
+        //    type: 'POST',
+        //    url: "/some-url",
+        //    contentType: "application/json",
+        //    success:  function (data, textStatus) {
+
+        //        funcSuc(data);
+        //    }
+        //});
     };
-    
+
 
 
 });

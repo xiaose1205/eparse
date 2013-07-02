@@ -1,8 +1,6 @@
 ﻿/// <reference path="lib/bootstrap.js" />
 define(function (require, exports, module) {
-    require("bootstrap.css");
-    require("common.css");
-    require("index.css");
+ 
     var $ = require('lib/jquery.js');
     require("lib/bootstrap.js");
     var resources = require('resources');
@@ -39,7 +37,8 @@ define(function (require, exports, module) {
 
         /**判断当前页面是属于什么目录，按照routes配置，执行相应js**/
         if (typeof window.location.pathname !== 'undefined' && window.location.pathname != null && window.location.pathname != '') {
-            var route = window.location.pathname.toLocaleLowerCase();
+          
+             route = window.location.pathname.toLocaleLowerCase();
             if (typeof routes[route] !== 'undefined') {
                 require.async(routes[route], function (app) {
                     if (typeof app !== 'undefined' && typeof app.init !== 'undefined') {

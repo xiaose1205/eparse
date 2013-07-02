@@ -30,14 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HelloData.FrameWork, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\HelloData.FrameWork.dll</HintPath>
-    </Reference>
-    <Reference Include="HelloData.FWCommon, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\HelloData.FWCommon.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -55,6 +47,14 @@
     <Compile Include="User_PicsRepository.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\HelloData\HelloData.FrameWork\HelloData.FrameWork.csproj">
+      <Project>{5ebb695e-d6e4-4e48-b4e5-b6a674679019}</Project>
+      <Name>HelloData.FrameWork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\HelloData\HelloData.FWCommon\HelloData.FWCommon.csproj">
+      <Project>{f5ec683a-cb1a-4f7f-b779-e3d4f2a9843f}</Project>
+      <Name>HelloData.FWCommon</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Eparse.Model\Eparse.Model.csproj">
       <Project>{064f298e-a218-47bb-a56c-838c6243985a}</Project>
       <Name>Eparse.Model</Name>

@@ -1,4 +1,3 @@
-﻿define({
-    '/': 'module/index',
-    '/index.html': 'module/index',
+﻿define({ 
+    '/login.aspx':'module/loginout'
 });

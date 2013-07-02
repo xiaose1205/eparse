@@ -7,6 +7,7 @@ seajs.config({
         'bootstrap.css': '/css/bootstrap.css?t=2',
         'common.css': '/css/common.css?t=2',
         'index.css': '/css/index.css?t=2',
+        'common':'lib/common.action'
     },
     preload: ['jquery', 'bootstrap']
     
@@ -15,6 +16,6 @@ seajs.config({
 });
 define(function (require, exports, module) {
 
-    require('./init').run();
+    require('init').run();
 
 });

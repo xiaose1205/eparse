@@ -32,12 +32,15 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AjaxHandler\UserHandle.cs" />
+    <Compile Include="AppConent.cs" />
     <Compile Include="DemoService.cs" />
     <Compile Include="IServices\Idemo.cs" />
     <Compile Include="IServices\IUsers.cs" />
@@ -46,9 +49,25 @@
     <Compile Include="User_PageinfosService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\HelloData\HelloData.FrameWork\HelloData.FrameWork.csproj">
+      <Project>{5ebb695e-d6e4-4e48-b4e5-b6a674679019}</Project>
+      <Name>HelloData.FrameWork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\HelloData\HelloData.FWCommon\HelloData.FWCommon.csproj">
+      <Project>{f5ec683a-cb1a-4f7f-b779-e3d4f2a9843f}</Project>
+      <Name>HelloData.FWCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\HelloData\HelloData.Web\HelloData.Web.csproj">
+      <Project>{2e597779-c89d-4ff1-a4dd-367fb8c4f877}</Project>
+      <Name>HelloData.Web</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Eparse.Model\Eparse.Model.csproj">
       <Project>{064f298e-a218-47bb-a56c-838c6243985a}</Project>
       <Name>Eparse.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Eparse.Repository\Eparse.Repository.csproj">
+      <Project>{fab2ff0b-2dcd-4510-b7e8-b2c6a5696a9c}</Project>
+      <Name>Eparse.Repository</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

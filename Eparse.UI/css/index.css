@@ -232,7 +232,16 @@ footer .footer-nav {
     clear: both;
     margin: auto;
 }
+#primary-content h2 {
+    font-size : 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    
+}
 
+#primary-content input[type="radio"], input[type="checkbox"] {
+    margin-top: 0;
+}
 .ui-corner-all {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -312,7 +321,7 @@ footer .footer-nav {
 .auth-block input[type="text"], input[type="password"] {
     height: auto;
     margin-left: 0px;
-    width: 480px;
+    width: 450px;
 }
 
 .auth-block .controls {
@@ -363,7 +372,11 @@ footer .footer-nav {
     width: 100%;
 }
 
-.form-button-large.signup-button-facebook {
+.form-button-large.signup-button-qq {
+    margin-right: 4px;
+}
+
+.form-button-large.signup-button-sina {
     margin-right: 4px;
 }
 
@@ -377,7 +390,7 @@ footer .footer-nav {
 
 .form-button-large.signup-button-social {
     overflow: hidden;
-    padding: 0 10px 0 43px !important;
+    padding: 0 10px 0 33px !important;
 }
 
 .signup-button-social, .signup-button-social:hover, .signup-button-social:visited {
@@ -389,18 +402,50 @@ footer .footer-nav {
 }
 
 .margin-right-10 {
-    margin-right: 10px;
+    margin-right: 10px; 
 }
 
-.signup-button-facebook {
-    border-color: #2f426f;
-    background: #3c5fa8;
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#476fc2), to(#314f8e));
-    background: -webkit-linear-gradient(0% 0%, 0% 100%, from(#476fc2), to(#314f8e));
-    background: -moz-linear-gradient(center top, #476fc2, #314f8e);
-    background: linear-gradient(#476fc2, #314f8e);
+ 
+.signup-button-qq{
+	border-color:#2f426f;
+	 background: #0B8CB3;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0B8CB3), to(#43AFCB));
+    background: -webkit-linear-gradient(0% 0%, 0% 100%, from(#0B8CB3), to(#43AFCB));
+    background: -moz-linear-gradient(center top, #0B8CB3, #43AFCB);
+    background: linear-gradient(#0B8CB3, #43AFCB);
 }
-
+.signup-button-qq:hover,.signup-button-qq:active{
+	background:#335397;
+	background:-webkit-gradient(linear,0%0%,0%100%,from(#0C9BC5),to(#34A3BE));
+	background:-webkit-linear-gradient(0%0%,0%100%,from(#0C9BC5),to(#34A3BE));
+	background:-moz-linear-gradient(centertop,#0C9BC5,#34A3BE);
+	background:linear-gradient(#0C9BC5,#34A3BE);
+}
+ 
+.signup-button-qq.social-signup-icon{
+	border-right-color:#2f426f;
+}
+ 
+.signup-button-sina{
+	border-color:#2f426f;
+	  background: #E20B11;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E20B11), to(#F1AF3C));
+    background: -webkit-linear-gradient(0% 0%, 0% 100%, from(#E20B11), to(#F1AF3C));
+    background: -moz-linear-gradient(center top, #E20B11, #F1AF3C);
+    background: linear-gradient(#E20B11, #F1AF3C);
+}
+.signup-button-sina:hover,.signup-button-sina:active{
+	background:#335397;
+	background:-webkit-gradient(linear,0%0%,0%100%,from(#F4171D),to(#EFA527));
+	background:-webkit-linear-gradient(0%0%,0%100%,from(#F4171D),to(#EFA527));
+	background:-moz-linear-gradient(centertop,#F4171D,#EFA527);
+	background:linear-gradient(#F4171D,#EFA527);
+}
+ 
+.signup-button-sina.social-signup-icon{
+	border-right-color:#2f426f;
+}
+ 
 .signup-button-social {
     width: 131px;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -417,14 +462,14 @@ footer .footer-nav {
 .form-button-massive, .form-button-large {
     height: 32px;
     line-height: 32px;
-    width: 120px;
+    width: 100px;
     max-width: 200px;
     text-align: center;
     padding: 0 !important;
 }
 
 .form-button, .form-button-fake {
-    height:32px;
+    height: 32px;
     line-height: 29px;
     padding: 0 15px;
     font-size: 14px;
@@ -453,14 +498,13 @@ a, .fake-link {
 }
 
 .form-button-large.signup-button-social .social-signup-icon {
-    width: 33px;
+    width: 25px;
     height: 32px;
+    padding-left: 5px;
     line-height: 33px;
 }
 
-.signup-button-facebook .social-signup-icon {
-    border-right-color: #2f426f;
-}
+
 
 .signup-button-social .social-signup-icon {
     position: absolute;

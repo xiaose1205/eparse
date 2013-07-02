@@ -1,7 +1,7 @@
 define(function (require, exports, module) {
     var $ = require("lib/jquery");
     require('/css/messenger.css');
-    require('/css/messenger-theme-air.css'); 
+    require('/css/messenger-theme-future.css');
     var Backbone = require('lib/backbone'); 
 
     /*! messenger 1.2.3 2013-03-14 */
